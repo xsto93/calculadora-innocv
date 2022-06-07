@@ -11,7 +11,7 @@ const [result, setResult] = useState("");
   return (
     <div className='container'>
       <Input result={result}/>
-      <Keypad result={result} setResult={setResult} buttons={buttons}/>
+      <Keypad result={result} setResult={setResult}/>
     </div>
   );
 }
