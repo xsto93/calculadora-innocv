@@ -1,6 +1,7 @@
 import React from "react";
 
-const Keypad = ({setResult, result, buttons}) => {
+const { string, any, func } = PropTypes;
+const Keypad = ({setResult, result }) => {
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -50,5 +51,10 @@ const Keypad = ({setResult, result, buttons}) => {
     </div>
   );
 };
+
+Keypad.propTypes = {
+    setResult: func.isRequired,
+    result: string.isRequired,
+}
 
 export default Keypad;

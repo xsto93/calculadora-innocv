@@ -8,4 +8,8 @@ const Input = ({result}) => {
   )
 }
 
+Input.propTypes = {
+  result: string.isRequired,
+}
+
 export default Input
